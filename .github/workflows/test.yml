@@ -2,7 +2,7 @@ name: CreateFramework
 on:
   push:
     branches:
-    - master
+    - main
 jobs:
   build:
     name: Build iPhone simulator
