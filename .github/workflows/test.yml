@@ -19,6 +19,12 @@ jobs:
           -archivePath './CICDFramework' \
           SKIP_INSTALL=NO \
           BUILD_LIBRARIES_FOR_DISTRIBUTION=YES
+      -name: Create Framework
+       run: |
+         xcodebuild -create-xcframework \
+        -framework ./CICDFramework.xcarchive/dSYMs/CICDFramework.framework.dSYM/Contents/Resources/DWARF/CICDFramework.framework \
+        -framework ./CICDFramework.xcarchive/dSYMs/CICDFramework.framework.dSYM/Contents/Resources/DWARF/CICDFramework.framework \
+        -output ./CICDFramework.xcframework
       - name: Commit
         run: |
           # Stage the file, commit and push
