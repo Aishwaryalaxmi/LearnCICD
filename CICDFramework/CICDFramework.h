@@ -14,6 +14,6 @@ FOUNDATION_EXPORT double CICDFrameworkVersionNumber;
 FOUNDATION_EXPORT const unsigned char CICDFrameworkVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <CICDFramework/PublicHeader.h>
-//Checki
+//Checking
 
 
